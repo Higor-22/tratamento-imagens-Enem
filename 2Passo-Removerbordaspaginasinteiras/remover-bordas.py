@@ -8,14 +8,14 @@ Comentários: pode excluir a pagina_enem_1.png porque é a capa, e o pagina_enem
 from PIL import Image
 import os
 
-pasta_imagens = "imagens"
-pasta_saida = "recortadas"
+imagens = "imagens"
+pasta_saida = "2Passo-remover-bordas-paginas-inteiras"
 
 os.makedirs(pasta_saida, exist_ok=True)
 
-for nome_arquivo in os.listdir(pasta_imagens):
+for nome_arquivo in os.listdir(imagens):
     if nome_arquivo.lower().endswith(".png"):
-        caminho_entrada = os.path.join(pasta_imagens, nome_arquivo)
+        caminho_entrada = os.path.join(imagens, nome_arquivo)
         imagem = Image.open(caminho_entrada)
 
         largura, altura = imagem.size
