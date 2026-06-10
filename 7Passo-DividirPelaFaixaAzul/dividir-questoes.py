@@ -137,6 +137,6 @@ if __name__ == "__main__":
     print(f"Cor convertida: RGB{cor_azul}")
     
     # Executa a divisão
-    dividir_imagem_por_faixas(caminho_imagem, pasta_saida, cor_azul)
+    #dividir_imagem_por_faixas(caminho_imagem, pasta_saida, cor_azul)
     
     print("Divisão concluída!")
